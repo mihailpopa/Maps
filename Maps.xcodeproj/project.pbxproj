@@ -15,6 +15,9 @@
 		91ECE35315B6F62800709C10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ECE35215B6F62800709C10 /* AppDelegate.m */; };
 		91ECE35615B6F62800709C10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ECE35515B6F62800709C10 /* ViewController.m */; };
 		91ECE35915B6F62800709C10 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91ECE35715B6F62800709C10 /* ViewController.xib */; };
+		91ECE36015B6F6B300709C10 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91ECE35F15B6F6B300709C10 /* CoreLocation.framework */; };
+		91ECE36215B6F6B900709C10 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91ECE36115B6F6B900709C10 /* MapKit.framework */; };
+		91ECE36515B6F8C800709C10 /* InterestPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ECE36415B6F8C800709C10 /* InterestPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,19 @@
 		91ECE34215B6F62800709C10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		91ECE34415B6F62800709C10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		91ECE34615B6F62800709C10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		91ECE34A15B6F62800709C10 /* Maps-Info.plist */ = {isa = PBXFileReference; path = "Maps-Info.plist"; sourceTree = "<group>"; };
+		91ECE34A15B6F62800709C10 /* Maps-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Maps-Info.plist"; sourceTree = "<group>"; };
 		91ECE34C15B6F62800709C10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		91ECE34E15B6F62800709C10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		91ECE35015B6F62800709C10 /* Maps-Prefix.pch */ = {isa = PBXFileReference; path = "Maps-Prefix.pch"; sourceTree = "<group>"; };
-		91ECE35115B6F62800709C10 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		91ECE35015B6F62800709C10 /* Maps-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Maps-Prefix.pch"; sourceTree = "<group>"; };
+		91ECE35115B6F62800709C10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91ECE35215B6F62800709C10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		91ECE35415B6F62800709C10 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		91ECE35415B6F62800709C10 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		91ECE35515B6F62800709C10 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		91ECE35815B6F62800709C10 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		91ECE35F15B6F6B300709C10 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		91ECE36115B6F6B900709C10 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		91ECE36315B6F8C800709C10 /* InterestPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestPoint.h; sourceTree = "<group>"; };
+		91ECE36415B6F8C800709C10 /* InterestPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91ECE36215B6F6B900709C10 /* MapKit.framework in Frameworks */,
+				91ECE36015B6F6B300709C10 /* CoreLocation.framework in Frameworks */,
 				91ECE34315B6F62800709C10 /* UIKit.framework in Frameworks */,
 				91ECE34515B6F62800709C10 /* Foundation.framework in Frameworks */,
 				91ECE34715B6F62800709C10 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +59,8 @@
 		91ECE33315B6F62800709C10 = {
 			isa = PBXGroup;
 			children = (
+				91ECE36315B6F8C800709C10 /* InterestPoint.h */,
+				91ECE36415B6F8C800709C10 /* InterestPoint.m */,
 				91ECE34815B6F62800709C10 /* Maps */,
 				91ECE34115B6F62800709C10 /* Frameworks */,
 				91ECE33F15B6F62800709C10 /* Products */,
@@ -90,6 +101,8 @@
 		91ECE34915B6F62800709C10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				91ECE36115B6F6B900709C10 /* MapKit.framework */,
+				91ECE35F15B6F6B300709C10 /* CoreLocation.framework */,
 				91ECE34A15B6F62800709C10 /* Maps-Info.plist */,
 				91ECE34B15B6F62800709C10 /* InfoPlist.strings */,
 				91ECE34E15B6F62800709C10 /* main.m */,
@@ -163,6 +176,7 @@
 				91ECE34F15B6F62800709C10 /* main.m in Sources */,
 				91ECE35315B6F62800709C10 /* AppDelegate.m in Sources */,
 				91ECE35615B6F62800709C10 /* ViewController.m in Sources */,
+				91ECE36515B6F8C800709C10 /* InterestPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +253,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maps/Maps-Prefix.pch";
 				INFOPLIST_FILE = "Maps/Maps-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -250,6 +265,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maps/Maps-Prefix.pch";
 				INFOPLIST_FILE = "Maps/Maps-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
